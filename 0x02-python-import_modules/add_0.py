@@ -1,2 +1,11 @@
 def add(a, b):
-    return a + b
+    """
+    The add function
+
+    Arguments:
+    a and b; first and second integers respectively
+
+    returns:
+    Sum of a and b
+    """
+    return (a + b)
