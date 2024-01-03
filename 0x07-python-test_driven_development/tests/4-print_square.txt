@@ -1,0 +1,16 @@
+Prints a square of '#' characters with the specified size.
+
+    Args:
+    - size (int): The size length of the square.
+
+    Raises:
+    - TypeError: If size is not an integer or if size is a float and is less than 0.
+    - ValueError: If size is less than 0.
+
+    Example:
+    >>> print_square(3)
+    ###
+    ###
+    ###
+    >>> print_square(0)
+    (prints nothing, as it's a square with size 0)

@@ -1,0 +1,14 @@
+ Prints a formatted string with the given first and last names.
+
+    Args:
+    - first_name (str): The first name.
+    - last_name (str, optional): The last name. Defaults to an empty string.
+
+    Raises:
+    - TypeError: If first_name or last_name is not a string.
+
+    Example:
+    >>> say_my_name("John", "Doe")
+    My name is John Doe
+    >>> say_my_name("Alice")
+    My name is Alice
