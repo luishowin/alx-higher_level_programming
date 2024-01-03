@@ -14,6 +14,12 @@ def matrix_divided(matrix, div):
                if each row of the matrix does not have the same size, or
                if div is not a number.
     ZeroDivisionError: If div is equal to 0.
+
+    Example:
+    >>> matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+    >>> divisor = 2
+    >>> matrix_divided(matrix, divisor)
+    [[0.5, 1.0, 1.5], [2.0, 2.5, 3.0], [3.5, 4.0, 4.5]]
     """
     # Check if matrix is a list of lists
     if not isinstance(matrix, list) or not all(isinstance(row, list) for row in matrix):
