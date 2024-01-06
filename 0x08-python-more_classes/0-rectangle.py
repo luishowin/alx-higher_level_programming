@@ -1,3 +1,4 @@
 #!/usr/bin/python3
 class Rectangle:
-    rectangle_length = 5
+    """Docstring: Description of the class."""
+    pass
