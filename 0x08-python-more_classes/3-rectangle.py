@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Defines a rectangle class."""
 
+
 class Rectangle:
     """Rectangle class."""
 
@@ -11,8 +12,8 @@ class Rectangle:
             width (int): width of the new rectangle.
             height (int): height of the new rectangle.
         """
-        self.width = width
-        self.height = height
+        self.width = width # Private attribute with leading underscore
+        self.height = height # Private attribute with leading underscore
 
     @property
     def width (self):
@@ -49,4 +50,3 @@ class Rectangle:
         if self.__width == 0 or self.__height == 0:
             return(0)
         return((self.__width * 2) + (self.__height * 2))
-
