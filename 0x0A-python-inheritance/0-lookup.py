@@ -1,17 +1,5 @@
 #!/usr/bin/python3
-"""lookup function"""
-
-def lookup(obj):
-    """
-    Returns a list of available attributes and methods of an object.
-
-    :param obj: The object to inspect.
-    :return: A list of attributes and methods.
-    :type obj: object
-    :return: A list of attributes and methods.
-    :rtype: list
-    """
-    return dir(obj)
+lookup = __import__('0-lookup').lookup
 
 # Example usage:
 class MyClass1(object):
