@@ -1,5 +1,12 @@
 #!/usr/bin/python3
-lookup = __import__('0-lookup').lookup
+def lookup(obj):
+    """
+    Returns a list of available attributes and methods of an object.
+
+    :param obj: The object to inspect.
+    :return: A list of attributes and methods.
+    """
+    return dir(obj)
 
 # Example usage:
 class MyClass1(object):
