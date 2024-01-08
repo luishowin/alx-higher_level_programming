@@ -7,6 +7,9 @@ def lookup(obj):
 
     :param obj: The object to inspect.
     :return: A list of attributes and methods.
+    :type obj: object
+    :return: A list of attributes and methods.
+    :rtype: list
     """
     return dir(obj)
 
