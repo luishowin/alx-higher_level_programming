@@ -4,4 +4,12 @@
 
 class BaseGeometry:
     """Reps base geometry."""
-    pass
+    def area(self):
+        """
+        Public instance method that raises an Exception.
+
+        Raises:
+        - Exception: area() is not implemented.
+        """
+        raise Exception("area() is not implemented")
+    
