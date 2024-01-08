@@ -2,6 +2,7 @@
 """Defines a class BaseGeometry"""
 
 class BaseGeometry:
+    """Defines a class BaseGeometry."""
     def area(self):
         """Public instance method that raises an Exception.
 
