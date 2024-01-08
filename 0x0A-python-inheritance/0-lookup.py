@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+"""lookup function"""
+
 def lookup(obj):
     """
     Returns a list of available attributes and methods of an object.
@@ -9,13 +11,14 @@ def lookup(obj):
     return dir(obj)
 
 # Example usage:
-class ExampleClass:
-    def __init__(self):
-        self.attribute1 = 42
+class MyClass1(object):
+    pass
 
-    def method1(self):
-        return "Hello, World!"
+class MyClass2(object):
+    my_attr1 = 3
+    def my_meth(self):
+        pass
 
-obj_instance = ExampleClass()
-result = lookup(obj_instance)
-print(result)
+print(lookup(MyClass1))
+print(lookup(MyClass2))
+print(lookup(int))
