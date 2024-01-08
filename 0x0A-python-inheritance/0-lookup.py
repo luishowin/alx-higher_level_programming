@@ -12,9 +12,11 @@ def lookup(obj):
 
 # Example usage:
 class MyClass1(object):
+    """Docstring: description of the class"""
     pass
 
 class MyClass2(object):
+    """Docstring: description of the class"""
     my_attr1 = 3
     def my_meth(self):
         pass
