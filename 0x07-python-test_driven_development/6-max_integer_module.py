@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""Def max int."""
+
+
 def max_integer(input_list):
     """
     Returns the maximum integer from a list.
