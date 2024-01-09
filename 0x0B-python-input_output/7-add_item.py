@@ -1,16 +1,19 @@
 #!/usr/bin/python3
+"""Define a func."""
+
 
 import sys
 import os
-
-# Add the parent directory to the Python path
-parent_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
-sys.path.append(parent_dir)
-
 from 5-save_to_json_file import save_to_json_file
 from 6-load_from_json_file import load_from_json_file
 
-def add_items_to_list_and_save(arguments):
+def add_items_and_save(arguments):
+    """
+    Add command line arguments to a list, load existing items from a file,
+    extend the list, and save it back to the file in JSON format.
+
+    :param arguments: The command line arguments to add to the list.
+    """
     try:
         # Load existing items from the file if it exists
         try:
@@ -30,4 +33,4 @@ def add_items_to_list_and_save(arguments):
 
 if __name__ == "__main__":
     # Skip the script name (sys.argv[0]) and pass the rest of the arguments
-    add_items_to_list_and_save(sys.argv[1:])
+    add_items_and_save(sys.argv[1:])
